@@ -50,6 +50,12 @@ const routes = {
     url: 'https://helm.cilium.io/',
     replaces: {},
   },
+  bitnami: {
+    url: 'https://charts.bitnami.com/bitnami',
+    replaces: {
+      'docker.io': 'docker.muyulong.top',
+    },
+  },
 }
 
 async function handleRequest(event) {
